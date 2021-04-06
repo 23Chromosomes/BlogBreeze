@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    .min-h-screen-nav{
+        min-height: calc(100vh - 65.1px)!important;
+    }
+}
