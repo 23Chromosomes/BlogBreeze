@@ -13,13 +13,21 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('gebruikers', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->boolean('blogger')->default(0); //Account is blogger if value is 1
+            $table->string('naam');
+            $table->date('geboortedatum')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('wachtwoord');
+            $table->integer('mobiel')->nullable();
+            $table->string('straat')->nullable();
+            $table->string('huisnmr')->nullable();
+            $table->string('woonplaats')->nullable();
+            $table->string('postcode')->nullable();
             $table->rememberToken();
+            $table->text('profile_photo_path')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +39,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('gebruikers');
     }
 }
