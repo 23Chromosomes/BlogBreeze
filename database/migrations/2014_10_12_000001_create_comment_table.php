@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCommentsTable extends Migration
+class CreateCommentTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,7 +16,7 @@ class CreateCommentsTable extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->string('titel');
-            $table->smallText('reactie');
+            $table->Text('reactie', 100);
             $table->foreignId('gebruiker_id')->constrained();
             $table->foreignId('artikel_id')->constrained();
             $table->timestamps();
