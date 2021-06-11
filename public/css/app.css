@@ -31436,6 +31436,15 @@ select {
           animation: bounce 1s infinite;
 }
 
+input[type=file]::file-selector-button {
+  visibility: hidden;
+  width: 0px;
+}
+
+input[type=file]::file-selector-button:hover {
+  visibility: hidden;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

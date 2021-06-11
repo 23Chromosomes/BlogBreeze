@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+require __DIR__.'/auth.php';
 
+
+//Non Controller Pages
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');
@@ -21,12 +25,8 @@ Route::get('/home', function () {
     return view('pages.home');
 })->name('home');
 
-Route::get('/artikelen', function () {
-    return view('pages.artikelen');
-})->name('artikelen');
-
 Route::get('/over', function () {
-    return view('pages.over');
+    return view('pages.about');
 })->name('over');
 
 Route::get('/contact', function () {
@@ -37,4 +37,11 @@ Route::get('/dashboard', function () {
     return view('pages.dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+//Articles
+Route::get('/articles', [ArticleController::class, 'index'])->name('articles');
+Route::get('/articles/create', [ArticleController::class, 'create'])->name('article_create');
+Route::post('/articles', [ArticleController::class, 'store']);
+Route::get('/article/{slug}', [ArticleController::class, 'show']);
+Route::get('/article/{slug}/edit', [ArticleController::class, 'edit']);
+Route::put('/article/{post}', [ArticleController::class, 'update']);
+Route::delete('/articles/{post}', [ArticleController::class, 'destroy']);

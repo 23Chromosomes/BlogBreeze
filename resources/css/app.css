@@ -7,3 +7,12 @@
         min-height: calc(100vh - 65.1px)!important;
     }
 }
+
+input[type=file]::file-selector-button {
+    visibility: hidden;
+    width: 0px;
+  }
+
+  input[type=file]::file-selector-button:hover {
+      visibility: hidden;
+  }

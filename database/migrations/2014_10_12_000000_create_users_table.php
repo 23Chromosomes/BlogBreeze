@@ -13,10 +13,10 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('gebruikers', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->boolean('blogger')->default(0); //Account is blogger if value is 1
-            $table->string('naam');
+            $table->string('name');
             $table->date('geboortedatum')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -39,6 +39,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gebruikers');
+        Schema::dropIfExists('users');
     }
 }

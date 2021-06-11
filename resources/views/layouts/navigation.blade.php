@@ -19,8 +19,8 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('artikelen')" :active="request()->routeIs('artikelen')">
-                        {{ __('Artikelen') }}
+                    <x-nav-link :href="route('articles')" :active="request()->routeIs('articles')">
+                        {{ __('Articles') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
@@ -62,8 +62,8 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('artikelen')" :active="request()->routeIs('artikelen')">
-                        {{ __('Artikelen') }}
+                    <x-nav-link :href="route('articles')" :active="request()->routeIs('articles')">
+                        {{ __('Articles') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">

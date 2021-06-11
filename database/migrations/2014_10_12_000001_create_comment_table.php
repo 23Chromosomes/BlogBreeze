@@ -17,8 +17,8 @@ class CreateCommentTable extends Migration
             $table->id();
             $table->string('titel');
             $table->Text('reactie', 100);
-            $table->foreignId('gebruiker_id')->constrained();
-            $table->foreignId('artikel_id')->constrained();
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('article_id')->constrained();
             $table->timestamps();
         });
     }
