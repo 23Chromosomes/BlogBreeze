@@ -11,7 +11,7 @@
                     <div class="font-bold text-xl mb-2">{{ $post->naam }}</div>
                 </a>
                 <p class="text-grey-darker text-base">
-                    {!!Str::limit( $post->inhoud, 200)!!}
+                    {!! Str::limit( $post->inhoud, 200) !!}
                 </p>
             </div>
             <div class="px-6 pb-2">
@@ -19,12 +19,10 @@
             </div>
 
             @auth
-            <div>
                 <a class="rounded bg-purple-500 text-white hover:bg-purple-600 float-right p-2 m-2" href="/article/{{ $post->slug }}/edit">Bewerk Artikel</a>
-                <button onclick="event.preventDefault();document.getElementById('delete-post-form').submit();"class="rounded bg-red-500 text-white hover:bg-red-600 float-left m-2 p-2">
+                <button onclick="event.preventDefault();document.getElementById('delete-post-form').submit();" class="rounded bg-red-500 text-white hover:bg-red-600 float-left m-2 p-2">
                     Verwijderen
                 </button>
-            </div>
 
             <form id="delete-post-form" action="/articles/{{ $post->id }}" method="POST" style="display: none;">
                 @csrf
@@ -35,6 +33,5 @@
         </div>
     @endforeach
     </div>
-
 
 </x-app-layout>

@@ -39,9 +39,9 @@ Route::get('/dashboard', function () {
 
 //Articles
 Route::get('/articles', [ArticleController::class, 'index'])->name('articles');
-Route::get('/articles/create', [ArticleController::class, 'create'])->name('article_create');
+Route::get('/articles/create', [ArticleController::class, 'create'])->middleware(['auth'])->name('article_create');
 Route::post('/articles', [ArticleController::class, 'store']);
 Route::get('/article/{slug}', [ArticleController::class, 'show']);
-Route::get('/article/{slug}/edit', [ArticleController::class, 'edit']);
-Route::put('/article/{post}', [ArticleController::class, 'update']);
-Route::delete('/articles/{post}', [ArticleController::class, 'destroy']);
+Route::get('/article/{slug}/edit', [ArticleController::class, 'edit'])->middleware(['auth']);
+Route::put('/article/{post}', [ArticleController::class, 'update'])->middleware(['auth']);
+Route::delete('/articles/{post}', [ArticleController::class, 'destroy'])->middleware(['auth']);

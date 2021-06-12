@@ -14,18 +14,6 @@
 
 @auth
 <x-app-layout>
-    @if ($errors->any())
-    <div class="w-4/5 m-auto">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li class="w-1/5 mb-4 text-gray-50 bg-red-700 rounded-2xl
-                py-5">
-                    {{ $error }}
-                </li>
-            @endforeach
-        </ul>
-    </div>
-@endif
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <p class="text-base md:text-sm text-purple-500 font-bold pb-8">&lt; <a href="{{ url('articles') }}" class="text-base md:text-sm text-purple-500 font-bold no-underline hover:underline">BACK TO ARTICLES</a></p>
@@ -62,16 +50,6 @@
       </div>
 
       <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
-
-      <script>
-        const actualBtn = document.getElementById('hidden-btn');
-
-        const fileChosen = document.getElementById('file-chosen');
-
-        actualBtn.addEventListener('change', function(){
-        fileChosen.textContent = this.files[0].name
-        })
-      </script>
 
       <script>
         CKEDITOR.replace('ArticleContent');

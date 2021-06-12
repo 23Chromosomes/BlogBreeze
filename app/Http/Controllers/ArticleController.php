@@ -32,7 +32,6 @@ class ArticleController extends Controller
         $post = new Article();
 
         //Image
-
         $imageName = uniqid().'.'.$request->file('images')->getClientOriginalExtension();
         $request->file('images')->move(public_path('images'), $imageName);
         $post->artikels_photo_path = $imageName;
@@ -49,6 +48,26 @@ class ArticleController extends Controller
 
 
         return redirect('/articles');
+    }
+
+
+    public function edit($slug)
+    {
+        $post = Article::where('slug', $slug)->firstOrFail();
+        return view('pages.article_edit')->with('post', $post);
+    }
+
+    public function update(Article $post, Request $request)
+    {
+        //Slug & titel
+        $post->naam = $request->input('ArticleTitle');
+        $post->slug = $request->input('ArticleSlug');
+
+        //Inhoud van post
+        $post->inhoud = $request->input('ArticleContent');
+        $post->save();
+
+        return redirect("/article/$post->slug");
     }
 
     public function createSlug($titel, $id = 0)
@@ -77,23 +96,6 @@ class ArticleController extends Controller
         return Article::select('slug')->where('slug', 'like', $slug.'%')
         ->where('id', '<>', $id)
         ->get();
-    }
-
-
-    public function edit($slug)
-    {
-        $post = Article::where('slug', $slug)->firstOrFail();
-        return view('pages.article_edit')->with('post', $post);
-    }
-
-    public function update(Article $post, Request $request)
-    {
-        $post->naam = $request->input('txtTitle');
-        $post->slug = $request->input('txtSlug');
-        $post->content = $request->input('txtContent');
-        $post->save();
-
-        return redirect("/article/$post->slug");
     }
 
     public function destroy(Article $post)

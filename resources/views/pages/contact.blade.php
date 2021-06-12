@@ -4,7 +4,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="flex justify-center p-6 bg-white border-b border-gray-200">
-                    <form class="w-full max-w-lg" action="mailto:fake@email.com">
+                    <form class="w-full max-w-lg" enctype="text/plain" method="GET" action="mailto:fake@email.com">
                         <div class="flex flex-wrap -mx-3 mb-6">
                           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
