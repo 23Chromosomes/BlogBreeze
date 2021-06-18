@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/OwZFyyB.png" width="300"></a></p>
+<p align="center"><a href="https://nl.wikipedia.org/wiki/Blog" target="_blank"><img src="https://i.imgur.com/OwZFyyB.png" width="300"></a></p>
 <p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/8WDWKlC.png" width="600"></a></p><br>
 
 <table align="center">
