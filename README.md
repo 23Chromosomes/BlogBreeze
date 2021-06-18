@@ -1,5 +1,5 @@
 <p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/OwZFyyB.png" width="300"></a></p>
-<p align="center"><a href="https://www.curio.nl/" target="_blank" style="padding-bottom: .3em;border-bottom: 1px solid var(--color-border-secondary);"><img src="https://i.imgur.com/8WDWKlC.png" width="600"></a></p>
+##<p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/8WDWKlC.png" width="600"></a></p>
 
 <table align="center">
  <tr>
