@@ -65,6 +65,14 @@ class ArticleController extends Controller
         $post->naam = $request->input('ArticleTitle');
         $post->slug = $request->input('ArticleSlug');
 
+        //Image
+         //Image
+         if($request->file('images')!==null){
+            $imageName = uniqid().'.'.$request->file('images')->getClientOriginalExtension();
+            $request->file('images')->move(public_path('images'), $imageName);
+            $post->artikels_photo_path = $imageName;
+        }
+
         //Inhoud van post
         $post->inhoud = $request->input('ArticleContent');
         $post->save();
@@ -100,8 +108,9 @@ class ArticleController extends Controller
         ->get();
     }
 
-    public function destroy(Article $post)
+    public function destroy(Article $post, $slug)
     {
+        $post = Article::where('slug', $slug)->firstOrFail();
         $post->delete();
         return redirect("/articles");
     }

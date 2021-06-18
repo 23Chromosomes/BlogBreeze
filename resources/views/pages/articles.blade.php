@@ -20,15 +20,13 @@
             </div>
 
             @auth
+                <a class="rounded bg-red-500 text-white hover:bg-red-600 float-left m-2 p-2" href="/articles/{{ $post->slug }}/delete">Delete Artikel</a>
                 <a class="rounded bg-purple-500 text-white hover:bg-purple-600 float-right p-2 m-2" href="/article/{{ $post->slug }}/edit">Bewerk Artikel</a>
-                <button onclick="event.preventDefault();document.getElementById('delete-post-form').submit();" class="rounded bg-red-500 text-white hover:bg-red-600 float-left m-2 p-2">
-                    Verwijderen
-                </button>
 
-            <form id="delete-post-form" action="/articles/{{ $post->id }}" method="POST" style="display: none;">
+            {{-- <form id="delete-post-form" action="/articles/{{ $post->slug }}" method="POST" style="display: none;">
                 @csrf
                 @method('delete');
-            </form>
+            </form> --}}
             @endauth
 
         </div>
