@@ -29,7 +29,7 @@
 
                 <div class="mb-4">
                     <label class="text-xl text-gray-600">Image</label></br>
-                    <input class="border-2 border-gray-300 p-2 w-full form-control" type="file" name="images">
+                    <input class="border-2 border-gray-300 p-2 w-full form-control" type="file" name="images" required>
                 </div>
 
 

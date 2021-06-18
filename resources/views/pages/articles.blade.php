@@ -4,18 +4,19 @@
     @foreach ($posts as $post)
         <div class="max-w-sm rounded overflow-hidden shadow-lg m-2" style="height: fit-content;">
             <a href="/article/{{ $post->slug }}">
-                <img class="w-full" src="/images/{{ $post->artikels_photo_path }}" alt="IMAGE CAN NOT BE RETRIEVED"/>
+                <img class="w-full" src="/images/{{ $post->artikels_photo_path }}" alt="BlogImgage_NotLoaded"/>
             </a>
             <div class="px-6 py-4">
                 <a href="/article/{{ $post->slug }}">
                     <div class="font-bold text-xl mb-2">{{ $post->naam }}</div>
                 </a>
                 <p class="text-grey-darker text-base">
-                    {!! Str::limit( $post->inhoud, 200) !!}
+                    {{-- {{ Str::limit(str_replace('&quot;', '"', strip_tags($post->inhoud)),200,'...') }} --}}
+                    {!! truncateHtml($post->inhoud,200,'...') !!}
                 </p>
             </div>
             <div class="px-6 pb-2">
-                <span class="font-bold text-sm mb-2">{{ $post->user_id }}</span>
+                <span class="font-bold text-sm mb-2">{{ $post->user->name }}</span>
             </div>
 
             @auth

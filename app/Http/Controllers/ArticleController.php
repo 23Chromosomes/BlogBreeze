@@ -32,9 +32,11 @@ class ArticleController extends Controller
         $post = new Article();
 
         //Image
+        if($request->file('images')!==null){
         $imageName = uniqid().'.'.$request->file('images')->getClientOriginalExtension();
         $request->file('images')->move(public_path('images'), $imageName);
         $post->artikels_photo_path = $imageName;
+        }
 
         //Slug & titel
         $titel = $request->input('ArticleTitle');

@@ -21,7 +21,7 @@
 
 		<!--Blog Creator-->
         <div class="BottonArticle flex w-full justify-between">
-		    <p class="text-base md:text-lg font-normal text-gray-600">{{ $post->user_id }}</p>
+		    <p class="text-base md:text-lg font-normal text-gray-600">{{ $post->user->name }}</p>
         </div>
 
 	</div>

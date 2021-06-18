@@ -20,8 +20,9 @@
           <div class="bg-white overflow-hidden border-t border-b filter drop-shadow-xl sm:rounded-lg">
             <div class="p-6 bg-white border-gray-200">
 
-                <form method='POST' action="/articles" enctype="multipart/form-data">
+                <form method='POST' action="/article/{{ $post->id }}" enctype="multipart/form-data">
                     @csrf
+                    @method('PUT')
                 <div class="mb-4">
                   <label class="text-xl text-gray-600">Titel</label></br>
                   <input type="text" class="border-2 border-gray-300 p-2 w-full" name="ArticleTitle" id="ArticleTitle" required value="{{$post->naam}}">
