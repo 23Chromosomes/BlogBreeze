@@ -1,9 +1,12 @@
 <p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/OwZFyyB.png" width="300"></a></p>
 <p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/8WDWKlC.png" width="600"></a></p>
 
-<p align="center">
-<a href="https://github.com/23Chromosomes/BlogBreeze/releases" style="font-size:2em;"><img src="https://i.imgur.com/sCd12kM.png" alt="Releases" width="50">Releases (Als ik nog verder hier aan ga werken)</a>
-</p>
+<table style="border: 0px solid transparent;">
+ <tr>
+    <td><img src="https://i.imgur.com/sCd12kM.png" alt="Releases" width="50"></td>
+    <td><a href="https://github.com/23Chromosomes/BlogBreeze/releases" style="font-size:2em;">Releases (Als ik er nog verder mee ga)</a></td>
+ </tr>
+</table>
 
 ## Over Laravel Blog
 
