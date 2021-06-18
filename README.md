@@ -1,63 +1,32 @@
-<p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/OwZFyyB.png" width="400"></a></p>
-<p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/8WDWKlC.png" width="400"></a></p>
+<p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/OwZFyyB.png" width="300"></a></p>
+<p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/8WDWKlC.png" width="600"></a></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<a href="https://github.com/23Chromosomes/BlogBreeze/releases"><img src="https://i.imgur.com/sCd12kM.png" alt="Releases"></a>
 </p>
 
-## About Laravel
+## Over Laravel Blog
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel is een web application framework. Deze blog is gemaakt als school opdracht voor school.
+Deze blog gebruikt:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [Breeze](https://laravel.com/docs/8.x/starter-kits#laravel-breeze).
+- [Custom HTML Truncate, based on CakePHP](https://alanwhipple.com/2011/05/25/php-truncate-string-preserving-html-tags-words/).
+- [Migrations](https://laravel.com/docs/8.x/migrations#introduction).
+- [Eloquent-Relationships](https://laravel.com/docs/8.x/eloquent-relationships#querying-relations).
+- [Controllers](https://laravel.com/docs/8.x/controllers#introduction) met [Models](https://laravel.com/docs/8.x/controllers#introduction).
+- [Dynamic Slug Routes](https://laraveleasytutorials.blogspot.com/2017/11/how-to-create-unique-slug-or-unique-url.html).
+- [Web Routes](https://laravel.com/docs/8.x/validation#quick-defining-the-routes). with [Views](https://laravel.com/docs/8.x/views#introduction).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel is krachtig, snel en heel fijn om mee te werken.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Code
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Code mag worden gebruikt voor eigen gebruik. (Ja, zelfs bij Kevin)😀
 
-## Laravel Sponsors
+## Contact
+Entity808#7080
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
+## License van Laravel
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
