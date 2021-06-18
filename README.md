@@ -23,11 +23,6 @@ Deze blog gebruikt:
 
 Laravel is krachtig, snel en heel fijn om mee te werken.
 
-
-## Code
-
-Code mag worden gebruikt voor eigen gebruik. (Ja, zelfs bij Kevin)😀
-
 ## Contact
 Entity808#7080
 
