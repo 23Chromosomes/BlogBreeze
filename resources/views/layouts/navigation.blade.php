@@ -124,21 +124,29 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-2 space-y-1 border-t">
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+            <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                {{ __('Home') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+            <x-responsive-nav-link :href="route('articles')" :active="request()->routeIs('articles')">
+                {{ __('Articles') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
+            <x-responsive-nav-link :href="route('over')" :active="request()->routeIs('over')">
+                {{ __('Over') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('contact')" :active="request()->routeIs('contact')">
+                {{ __('Contact') }}
+            </x-responsive-nav-link>
+            @guest
+            <x-responsive-nav-link :href="route('login')" :active="request()->routeIs('login')">
+                {{ __('Login') }}
+            </x-responsive-nav-link>
+            @endguest
         </div>
 
         @auth
         <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-gray-200">
-            <div class="flex items-center px-4">
+        <div class="pt-4 pb-1 border-t border-b border-gray-200">
+            <div class="flex items-center px-4 border-b pb-4 border-gray-200">
                 <div class="flex-shrink-0">
                     <svg class="h-10 w-10 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -151,7 +159,7 @@
                 </div>
             </div>
 
-            <div class="mt-3 space-y-1">
+            <div class="space-y-1">
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
