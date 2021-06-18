@@ -2,7 +2,7 @@
 <p align="center"><a href="https://www.curio.nl/" target="_blank"><img src="https://i.imgur.com/8WDWKlC.png" width="600"></a></p>
 
 <p align="center">
-<a href="https://github.com/23Chromosomes/BlogBreeze/releases"><img src="https://i.imgur.com/sCd12kM.png" alt="Releases" width="50"></a>
+<a href="https://github.com/23Chromosomes/BlogBreeze/releases"><img src="https://i.imgur.com/sCd12kM.png" alt="Releases" width="50">Releases (Als ik nog verder hier aan ga werken</a>
 </p>
 
 ## Over Laravel Blog
