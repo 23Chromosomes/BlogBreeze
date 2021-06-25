@@ -108,9 +108,8 @@ class ArticleController extends Controller
         ->get();
     }
 
-    public function destroy(Article $post, $slug)
+    public function destroy(Article $post)
     {
-        $post = Article::where('slug', $slug)->firstOrFail();
         $post->delete();
         return redirect("/articles");
     }

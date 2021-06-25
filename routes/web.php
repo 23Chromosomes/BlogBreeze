@@ -44,4 +44,4 @@ Route::post('/articles', [ArticleController::class, 'store']);
 Route::get('/article/{slug}', [ArticleController::class, 'show']);
 Route::get('/article/{slug}/edit', [ArticleController::class, 'edit'])->middleware(['auth']);
 Route::put('/article/{post}', [ArticleController::class, 'update'])->middleware(['auth']);
-Route::get('/articles/{slug}/delete', [ArticleController::class, 'destroy'])->middleware(['auth']);
+Route::delete('/articles/{post}', [ArticleController::class, 'destroy'])->middleware(['auth']);

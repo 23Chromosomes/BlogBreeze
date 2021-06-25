@@ -19,7 +19,7 @@ class CreateArticleTable extends Migration
             $table->string('slug')->unique();
             $table->text('inhoud');
             $table->foreignId('user_id')->constrained();
-            $table->text('articles_photo_path')->nullable();
+            $table->text('artikels_photo_path')->nullable();
             $table->timestamps();
         });
     }
